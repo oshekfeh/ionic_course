@@ -16,5 +16,6 @@ export class Data {
     return this.posts;
   }
   addPost(post) {
+    this.posts.next(post)
   }
 }

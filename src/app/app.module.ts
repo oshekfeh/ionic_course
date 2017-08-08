@@ -7,18 +7,20 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
-
+import { PostPage } from '../pages/post/post'
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 // import { DataProvider } from '../providers/data';
 import { Data } from '../providers/data';
+
 @NgModule({
   declarations: [
     MyApp,
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    PostPage
   ],
   imports: [
     BrowserModule,
@@ -30,12 +32,12 @@ import { Data } from '../providers/data';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    PostPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass:  IonicErrorHandler}, Data
-  ]
+    {provide: ErrorHandler, useClass:  IonicErrorHandler}, Data]
 })
 export class AppModule {}
