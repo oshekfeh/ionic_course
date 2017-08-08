@@ -21,8 +21,9 @@ import { Data } from '../providers/data';
     TabsPage
   ],
   imports: [
-    BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    BrowserModule
+    // StatusBar
   ],
   bootstrap: [IonicApp],
   entryComponents: [

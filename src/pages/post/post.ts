@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController } from 'ionic-angular';
+import { /*IonicPage,*/ NavController } from 'ionic-angular';
 import { Data } from '../../providers/data'
 /**
  * Generated class for the PostPage page.
@@ -15,14 +15,14 @@ class Post {
   constructor() {}
 }
 
- @IonicPage()
+ // @IonicPage()
 @Component({
   selector: 'page-post',
-  templateUrl: 'post.html',
+  templateUrl: 'post.html'
 })
 export class PostPage {
   post: Post = new Post()
-  constructor(public navCtrl: NavController,public _data: Data) {}
+  constructor(public navCtrl: NavController, public _data: Data) {}
 
   submit() {
     this._data.addPost(this.post)
